@@ -97,6 +97,7 @@ body {
     font-size: 2rem;
     cursor: pointer;
     transition: transform 0.2s ease, opacity 0.2s ease, filter 0.2s ease;
+    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0001);
      
   }
 
@@ -114,7 +115,6 @@ body {
     margin-bottom: 17px;
     text-align: center;
     color: var(--clr-text);
-
   }
 
   .carousel-item img {
@@ -142,6 +142,7 @@ footer img {
     width: 30px;
     height: auto;
     margin-right: 10px;
+    transition: transform 0.8s linear;
 }
 
   footer p,
@@ -153,6 +154,14 @@ footer img {
     font-size: 16px;
     text-decoration: none;
     font-family: "Faculty Glyphic", sans-serif;
+    transition: all 0.8s linear;
+  }
+
+  footer a:hover,
+  footer a img:hover {
+    transform: scale(1.15);
+    font-weight: 700;
+    color: #22e318;
   }
 
   a.second {
